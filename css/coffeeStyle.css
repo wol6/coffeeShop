@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    overflow-x: hidden;
+  
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid silver;
+}
+.logo img{
+    width: 8rem;
+    height: 6rem;
+    margin: 0 4rem;
+}
+.navigation{
+    margin: 0 5rem;
+}
+.navigation ul li{
+   display: inline;
+   margin: 2rem 2rem;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: brown;
+    transition: all 0.4s ease-out;
+}
+.navigation ul li a:hover{
+    text-shadow: -5px -15px 2px brown;
+    color: rgb(231, 231, 231);
+}
+.navigation img{
+    width: 1.3rem;
+    height: 1.5rem;
+}
+.navigation img:hover{
+    color: red;
+}
+
+.main{
+    background: #E5E6E8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30rem;
+
+}
+
+.profile img{
+    width: 30rem;
+    height: 25rem;
+    border-radius: 10%;
+}
+.tag p,h1{
+    /* width: 30%; */
+    padding: 0.5rem;
+}
+.tag>h1{
+   color: rgb(84, 168, 27);
+  
+}
+.shopBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    background: #fff;
+    cursor: pointer;
+}
+.shopBtn img{
+    width: 1.5rem;
+    height: 1.2rem;
+    padding-right: 0.3rem;
+    padding-top: 0.1rem;
+}
+.shopBtn button{
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    color: rgb(84, 168, 27);
+
+}
+.product{
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 16rem;
+    height: 19rem;
+    margin: 2rem;
+    background: #E5E6E8;
+    border-radius: 1rem;
+}
+.product img{
+    width: 16rem;
+    height: 12rem;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.details div p{
+    padding: 0.3rem;
+    color: chocolate;
+    font-weight: 600;
+}
+.product button{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0.8rem 4.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(223, 217, 217);
+    padding: 0.2rem;
+    color: brown;
+    background: #f3f0f0;
+    transition: all 0.5s;
+
+}
+.product button:hover{
+    color: #fff;
+    background: rgb(84, 168, 27);
+    cursor: pointer;
+}
+
+/* loginPAge */
+/* .formContainer{
+    height: 400px;
+} */
+.register{
+    /* border: 1px solid black; */
+    width: 100%;
+    max-width: 29rem;
+    margin: 3rem 6rem;
+    padding: 3rem 7rem;
+    background: #E5E6E8;
+    border-radius: 2rem;
+}
+.register h3{
+    text-align: center;
+    font-size: 1.6rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.8rem;
+    /* color: rgb(84, 168, 27); */
+    color: brown;
+}
+.register label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: brown;
+}
+.register input{
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+}
+.register button{
+    margin: 1rem 4.5rem;
+    width: 6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: brown;
+    transition: all 0.4s ease;
+}
+.register button:hover{
+    color: brown;
+    background: #fff;
+    cursor: pointer;
+}
+.login{
+    width: 100%;
+    max-width: 29rem;
+    margin: -27rem 45rem;
+    padding: 1rem 7rem;
+    background: #E5E6E8;
+    border-radius: 2rem;
+}
+.login h3{
+    text-align: center;
+    font-size: 1.6rem;
+    /* border-bottom: 1px solid gray; */
+    padding-bottom: 0.8rem;
+    /* color: rgb(84, 168, 27); */
+    color: brown;
+}
+.login label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: brown;
+}
+.login input{
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+}
+.login button{
+    margin: 1rem 4.5rem;
+    width: 6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: brown;
+    transition: all 0.4s ease;
+}
+.login button:hover{
+    color: brown;
+    background: #fff;
+    cursor: pointer;
+}
+
+.loginTags{
+    width: 40%;
+    margin: 30rem 42rem;
+    /* background: #E5E6E8; */
+    text-align: center;
+}
+.loginTags h3{
+    color: brown;
+}
+.loginTags h4{
+    color: rgb(84, 168, 27);
+    margin-top: 0.8rem;
+    padding-left: 4rem;
+}
+.loginTagsImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginTagsImg img{
+    width: 5rem;
+    height: 4rem;
+
+}
+#bean{
+    width: 10rem;
+    height: 8rem;
+    margin-top: 1.6rem;
+}
+
+/* profile section */
+/* .profileContainer{
+    display: flex;
+    justify-content: center;
+} */
+.profileCart{
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 62rem;
+    background-color: #333;
+    margin-right: -100rem;
+    /* transform:translateY(90px); */
+    transition: margin-right 1s linear;
+}
+.profileCart > img{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    position: relative;
+    top: -370px;
+    right: 0;
+    cursor: pointer;
+}
+.profileCart.active{
+    width: 100%;
+    height: 100vh;
+}
+#uniqueName{
+    margin-left: -15rem;
+    color: chocolate;
+}

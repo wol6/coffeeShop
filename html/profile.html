@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="/css/coffeeStyle.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- store in profile section -->
+        <div class="profileStore">
+            <!-- website header section  -->
+            <div class="header">
+                <div class="logo">
+                    <img src="/img/ODUJEK0.jpg" alt="coffee">
+                </div>
+                <h1 id="uniqueName"></h1>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li id="myCart" style="cursor: pointer;"><img src="/img/shopping-bag.png" alt=""></li>
+                        <li onclick="logout()" style="cursor: pointer;"><img src="/img/turn-off.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- website mainStore section  -->
+            <div class="store">
+                <!-- <div class="product">
+                    <img class="imgUrl" alt="">
+                    <div class="details">
+                        <div>
+                            <p class="coffeeName">Name</p>
+                            <p class="coffeeRegion">region</p>
+                        </div>
+                        <div>
+                            <p class="coffeePrice">price</p>
+                            <p class="coffeeWeight">weight</p>
+                        </div>
+                    </div>
+                    <button>Add To Cart</button>
+                </div> -->
+            </div>
+        </div>
+        <!-- mycart Section of website -->
+        <div class="profileCart">
+            <img id="close" src="/img/close.png" alt="">
+            <div style="height: 23rem;" class="product">
+                <img class="imgUrl" alt="">
+                <div class="details">
+                    <div>
+                        <p class="coffeeName">Name</p>
+                        <p class="coffeeRegion">region</p>
+                    </div>
+                    <div>
+                        <p class="coffeePrice">price</p>
+                        <p class="coffeeWeight">weight</p>
+                    </div>
+                </div>
+                <button style="margin: -80px 95px;" id="deleteFromCart">Delete</button>
+                <button id="buyProduct">Buy > Now</button>
+
+                <label for="quantity" style="margin-left: 40px; font-size: 13px;color: brown;">Quantity (between 1 and 5):</label>
+                <div style="margin-left: 50px;">
+                    <input style="border-radius: 5px;" type="number" id="quantityCount" min="1" max="5">
+                <input style="color: brown;padding: 0px -3px;" type="submit" onclick="totalCount()" value="add"><span id="cartTotalAmount" style="padding-left: 5px;color: green;"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/js/mystore.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

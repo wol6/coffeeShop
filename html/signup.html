@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="/css/coffeeStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- website header section  -->
+        <div class="header">
+            <div class="logo">
+                <img src="/img/ODUJEK0.jpg" alt="coffee">
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- website signup section  -->
+       <div class="formContainer">
+        <div class="register">
+            <h3>SignUp</h3>
+            <label for="userName">Name</label>
+            <div>
+                <input type="text" id="userName">
+            </div>
+            <label for="mobNo">Mobile No:</label>
+            <div>
+                <input type="number" id="mobNo">
+            </div>
+            <label for="pswd">Password</label>
+            <div>
+                <input type="password" id="pswd">
+            </div>
+            <label for="cpswd">Confirm Password</label>
+            <div>
+                <input type="text" id="cpswd">
+            </div>
+            <button onclick="register()">submit</button>
+
+        </div>
+        <!-- website signup section -->
+        <div class="login">
+            <h3>LogIn</h3>
+            <label for="loginName">Mobile No:</label>
+            <div>
+                <input type="number" id="loginName">
+            </div>
+            <label for="loginPswd">Password</label>
+            <div>
+                <input type="password" id="loginPswd">
+            </div>
+            <button onclick="login()">LogIn</button>
+        </div>
+
+        <div class="loginTags">
+            <h3>Login to purchase your favorite coffee</h3>
+            <h4>Just brewed happiness in a cup!</h4>
+            <div class="loginTagsImg">
+                <img id="bean" src="/img/bean.png" alt="">
+                <!-- <img src="/img/maker.png" alt=""> -->
+                <img src="/img/cup.png" alt="">
+            </div>
+        </div>
+       </div>
+
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
